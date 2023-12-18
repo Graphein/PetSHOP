@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adotar um Pet</title>
+</head>
+<body>
+    <h1>Adotar um Pet</h1>
+    <form action="/adotarPet" method="POST">
+        <label for="interessado">Selecione o Interessado:</label>
+        <select id="interessado" name="interessado">
+            <option value="interessado1">Interessado 1</option>
+            <option value="interessado2">Interessado 2</option>
+        </select><br><br>
+
+        <label for="pet">Selecione o Pet:</label>
+        <select id="pet" name="pet">
+            <option value="pet1">Pet 1</option>
+            <option value="pet2">Pet 2</option>
+        </select><br><br>
+        <input type="submit" value="Adotar">
+    </form>
+</body>

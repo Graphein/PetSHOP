@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Adoção de Pets</title>
+</head>
+<body>
+    <h1>Menu</h1>
+    <ul>
+        <li><a href="/cadastroInteressado.html">Cadastro de Interessados</a></li>
+        <li><a href="/cadastroPet.html">Cadastro de Pets</a></li>
+        <li><a href="/adotarPet.html">Adotar um Pet</a></li>
+    </ul>
+    <p id="ultimoAcesso">Último acesso: Carregando...</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var ultimoAcesso = document.cookie.replace(/(?:(?:^|.*;\s*)ultimoAcesso\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+            document.getElementById('ultimoAcesso').textContent = 'Último acesso: ' + (ultimoAcesso || 'Nunca acessou');
+        });
+    </script>
+</body>
+</html>
